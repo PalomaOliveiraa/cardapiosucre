@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt -BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+	
+	<title> Ficha de pedidos </title>
+	<link rel="stylesheet" type="text/css" href="formulario.css" >
+
+</head>
+<body id=container>
+ 	
+ 	<div >
+   <img id="imagem-titulo" src="SUBLOGO1.png" width="120" height="110">
+ 	<h1 id="titulo"> Pedidos Páscoa 2023 </h1>
+ 	<p id="subtitulo">Complete as informaçãoes do seu pedido </p>
+ 	<br>
+ 		
+ 	</div>
+
+<form >
+
+<fieldset class="grupo">
+ 		
+ 	<div class="campo">
+
+ 	<label for="nome"><strong>Nome:</strong></label>
+ 	<input type="text" nome="nome:" id="nome:" required> 
+
+ 	</div>
+
+ 	<div class="campo">
+
+ 	<label for="endereço"><strong>Endereço:</strong></label>
+ 	<input type="text" name="Endereço:" id="endereço:" required> 
+
+ 	</div>
+  </fieldset>
+  
+	<div class="campo">
+
+ 	<label for="telefoneparacontato"><strong>Telefone para contato:</strong></label>
+ 	<input type="text" name="telefoneparacontato:" id="telefoneparacontato" required>  
+
+ 	</div>
+ 
+
+  	<div class="campo">   
+ 		                       
+ 	<label><strong>Ovos de colher 350g</strong></label><br><br>
+
+ 	<label>
+ 	<input type="radio" name="casca" value="aoleite" checked >Ao leite
+ 	</label>
+
+ 	<label>
+ 	<input type="radio" name="casca" value="meioamargo">Meio Amargo
+ 	</label>
+
+ 	<label>
+ 	<input type="radio" name="casca" value="branco">Branco
+ 	</label>
+
+ 	</div>
+
+   <div class="campo">
+ 
+ 	<label for="Escolha o recheio:"><strong>Escolha o recheio:</strong></label><br><br>
+
+<select id="Escolha o recheio:" required> 
+   <option selected disabled value="">Selecione</option>
+ 	<option>Brigadeiro </option>
+ 	<option>Ninho com geleia de morango</option>
+   <option>Brigadeiro branco</option>
+ 	<option>Palha italiana de brigadeiro</option>
+ 	<option>Brownie</option> 
+</select>
+
+</div>
+ 	
+<fieldset class="grupo">
+
+   <div id="check"> 
+
+   <label><strong>Selecione a forma de pagamento:</strong></label><br><br>
+    	
+   <input type="checkbox" id="pagamento1" name="pagamento1" value="pix">
+   <label for="pagamento1">Pix</label>
+   <input type="checkbox" id="pagamento2" name="pagamento2" value="Dinheiro">
+   <label for="pagamento2"> Dinheiro</label>
+   <input type="checkbox" id="pagamento3" name="pagamento3" value="Cartão">
+   <label for="pagamento3">Cartão</label>
+    	
+   </div>
+
+</fieldset>
+
+   <div class="campo">
+      <br>
+   <label for="Observações"><strong>Observações:</strong></label>
+   <textarea rows="6" style="width: 300px" id="Observações" name="Observações"></textarea>
+
+   </div>
+
+
+<button class="botao" type="submit" onsubmit="">Enviar</button>
+
+
+
+</form>
+
+</body>
+
+</html>
+
